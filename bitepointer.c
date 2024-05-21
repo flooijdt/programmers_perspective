@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 typedef unsigned char *byte_pointer;
 
 void show_bytes(byte_pointer start, size_t len) {
@@ -21,6 +22,8 @@ void test_show_bytes(int val) {
 }
 
 int main(){
-  test_show_bytes(12345);
+  // test_show_bytes(12345);
+  const char *m = "mnopqr";
+  show_bytes((byte_pointer) m, strlen(m));
   return 0;
 }
