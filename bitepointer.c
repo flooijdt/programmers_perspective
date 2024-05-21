@@ -22,8 +22,8 @@ void test_show_bytes(int val) {
 }
 
 int main(){
-  // test_show_bytes(12345);
-  const char *m = "mnopqr";
-  show_bytes((byte_pointer) m, strlen(m));
+  test_show_bytes(12345);
+  // const char *m = "mnopqr";
+  // show_bytes((byte_pointer) m, strlen(m));
   return 0;
 }
