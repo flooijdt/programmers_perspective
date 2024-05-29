@@ -22,7 +22,13 @@ void test_show_bytes(int val) {
 }
 
 int main(){
-  test_show_bytes(12345);
+
+short x = 12345;
+short mx = -x;
+
+show_bytes((byte_pointer) &x, sizeof(short));
+show_bytes((byte_pointer) &mx, sizeof(short));
+  // test_show_bytes(12345);
   // const char *m = "mnopqr";
   // show_bytes((byte_pointer) m, strlen(m));
   return 0;
