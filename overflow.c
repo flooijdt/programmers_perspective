@@ -3,6 +3,12 @@
 int main() {
   int var = 200 * 300 * 400 * 500;
   double varl = 200 * 300 * 400 * 500;
-  printf("%f\n", varl);
+  long int varlong = 200 * 300 * 400 * 500;
+  // for printf:
+  //   u = int unsigned;
+  //   d = int signed; it is signed by default
+  //   l = long;
+  //   f = float and double.
+  printf("%u\n", var);
   return 0;
 }
