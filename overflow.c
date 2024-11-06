@@ -2,6 +2,7 @@
 
 int main() {
   int var = 200 * 300 * 400 * 500;
-  printf("%d\n", var);
+  double varl = 200 * 300 * 400 * 500;
+  printf("%f\n", varl);
   return 0;
 }
