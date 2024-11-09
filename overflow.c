@@ -12,7 +12,9 @@ int main() {
     l = long;
     f = float and double.
   */
-  printf("sizeof int: %d\n", sizeof(int));
+  printf("sizeof int: %lu\n", sizeof(int));
+  printf("sizeof double: %lu\n", sizeof(double));
+  printf("sizeof long: %lu\n", sizeof(long));
   printf("int unsined: %u\n", var);
   printf("int signed: %d\n", var);
   printf("int unsigned 2^32: %u\n", max2);
