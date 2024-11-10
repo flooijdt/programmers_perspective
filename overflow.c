@@ -2,6 +2,7 @@
 
 int main() {
   int var = 200 * 300 * 400 * 500;
+  float varf = 200 * 300 * 400 * 500;
   double varl = 200 * 300 * 400 * 500;
   long int varlong = 200 * 300 * 400 * 500;
   unsigned int max = 4294967295;
@@ -15,6 +16,8 @@ int main() {
   printf("sizeof int: %lu\n", sizeof(int));
   printf("sizeof double: %lu\n", sizeof(double));
   printf("sizeof long: %lu\n", sizeof(long));
+  printf("sizeof float: %lu\n", sizeof(float));
+  printf("int unsined: %f\n", varf);
   printf("int unsined: %u\n", var);
   printf("int signed: %d\n", var);
   printf("int unsigned 2^32: %u\n", max2);
