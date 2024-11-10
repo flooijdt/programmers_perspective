@@ -21,13 +21,13 @@ void test_show_bytes(int val) {
   show_pointer(pval);
 }
 
-int main(){
+int main() {
 
-short x = 12345;
-short mx = -x;
+  int x = 12345678;
+  // short mx = -x;
 
-show_bytes((byte_pointer) &x, sizeof(short));
-show_bytes((byte_pointer) &mx, sizeof(short));
+  show_bytes((byte_pointer)&x, sizeof(int));
+  // show_bytes((byte_pointer)&mx, sizeof(short));
   // test_show_bytes(12345);
   // const char *m = "mnopqr";
   // show_bytes((byte_pointer) m, strlen(m));
