@@ -13,6 +13,11 @@ void reverse_array(int a[], int cnt) {
 }
 
 int main() {
-  printf("placeholder");
+  int a[5] = {1, 2, 3, 4, 5};
+  reverse_array(a, 5);
+  int i = 0;
+  for (i = 0; i <= 5; i++) {
+    printf("%d", a[i]);
+  }
   return 0;
 }
