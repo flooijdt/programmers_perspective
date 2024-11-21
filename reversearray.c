@@ -14,10 +14,14 @@ void reverse_array(int a[], int cnt) {
 
 int main() {
   int a[5] = {1, 2, 3, 4, 5};
+  int b[4] = {1, 2, 3, 4};
   reverse_array(a, 5);
   int i = 0;
-  for (i = 0; i <= 5; i++) {
-    printf("%d", a[i]);
+  for (i = 0; i <= sizeof(a) / 4; i++) {
+    printf("%d\n", a[i]);
+  }
+  for (i = 0; i <= sizeof(b) / 4; i++) {
+    printf("%d", b[i]);
   }
   return 0;
 }
